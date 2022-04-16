@@ -1,0 +1,29 @@
+<body>
+<form>
+ <h1> HTML Forms</h1>
+ <style>
+
+  #First Name,
+  #Last Name {
+    margin: 10px;
+    padding: 12px;
+    text-align: center;
+  }
+</style>
+<div class="input">
+  <label>First Name:</label><br>
+  <input type="text" style="margin-left: 10px;" name="FirstName">
+</div>
+<br>
+<div class="input">
+  <label>Last Name:</label><br>
+  <input type="text"  style="margin-left: 10px;" name="LastName">
+  </div>
+</form>
+<hr>
+<button type="submit" style="margin-left: 80px;"  (click)="LoginUser()">submit</button>
+<hr>
+<p><b>property Binding</b></p>
+<img [src]="imageUrl"/>
+</body>
+
