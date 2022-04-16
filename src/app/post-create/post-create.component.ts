@@ -6,11 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./post-create.component.css']
 })
 export class PostCreateComponent implements OnInit {
-
-
 FirstName: string= ' ';
 LastName: string= ' ';
 imageUrl: string ="assets/image/angular.png";
+currentCustomer = 'priya';
+fullName: string = "Hello Angular.js"
+
 LoginUser()
 {
   this.FirstName && this.LastName;
@@ -20,6 +21,7 @@ LoginUser()
 
 }
 constructor() { }
+
 
 ngOnInit() :void {
  }

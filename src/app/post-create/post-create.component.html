@@ -10,20 +10,27 @@
     text-align: center;
   }
 </style>
+<p><b>Two way Data Binding</b></p>
+<input [(ngModel)]="fullName" /> <br/><br/>
+<p> {{fullName}} </p>
 <div class="input">
-  <label>First Name:</label><br>
-  <input type="text" style="margin-left: 10px;" name="FirstName">
+  <p><b>Event Binding</b></p>
+ <label>First Name:</label><br>
+ <input type="text" style="margin-left: 10px;" name="FirstName">
 </div>
 <br>
 <div class="input">
-  <label>Last Name:</label><br>
-  <input type="text"  style="margin-left: 10px;" name="LastName">
-  </div>
+<label>Last Name:</label><br>
+<input type="text"  style="margin-left: 10px;" name="LastName">
+</div>
 </form>
 <hr>
 <button type="submit" style="margin-left: 80px;"  (click)="LoginUser()">submit</button>
 <hr>
 <p><b>property Binding</b></p>
 <img [src]="imageUrl"/>
+<p><b>interpolation</b></p>
+<h3>Current customer: {{ currentCustomer}}</h3>
+
 </body>
 
